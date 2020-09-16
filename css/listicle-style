@@ -1,0 +1,176 @@
+/*
+ TODO(you): Write the CSS necessary to complete HW1!
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.headerimg{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/header.jpg);
+	background-repeat: no-repeat;
+  	background-size: cover;
+ 	height: 500px;
+
+}
+
+.text{
+	margin: auto;
+	max-width: 780px;
+}
+
+.infotext{
+	position: relative;
+	font-size: 36px;
+	font-family: 'Roboto Slab', 'serif';
+ 	color: white;
+}
+
+#one{
+	color: black;
+	display:  inline-block;
+}
+
+#profile{
+	border-radius: 50%;
+	position: absolute;
+	top: 500px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: 1px solid white;
+	width: 100px;
+}
+
+.profile-text{
+	position: relative;
+	top: 50px;
+	font-size: 18px;
+	font-family: 'Source Sans Pro', 'sans-serif';
+	color: rgb(51, 51, 51);
+	line-height: 24px;
+	margin-bottom: 0px;
+}
+
+#date{
+	text-decoration: underline;
+	padding-bottom: 10px;
+	border-bottom: 2px solid;
+	border-color: #e6e6e6;
+	width: 200px;
+	font-style: italic;
+	margin-bottom: 80px;
+}
+
+.bodytextonefirst{
+	position:  relative;
+}
+
+.first{
+	margin-top: 120px;
+}
+
+.two{
+	position: absolute;
+	width: 40px;
+	left: -80px;
+	text-align: right;
+	font-size: 36px;
+	font-family: 'Roboto Slab', 'serif';
+	color: rgba(0, 0, 0, 0.25);
+	display:  inline-block;
+}
+
+.contentone{
+	font-size: 36px;
+	font-family: 'Roboto Slab','serif';
+	color: rgb(51, 51, 51);
+	width: 66.67%;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 16.665%;
+}
+
+.add{
+	color: #42b4d6;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+a:link{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+.description{
+	font-family: 'Source Sans Pro','sans-serif';
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 32px;
+	margin-bottom: 20px;
+}
+
+.imgone{
+	width: 100%;
+	margin-bottom: 120px;
+}
+
+@media screen and (min-width: 480px) and (max-width:720px){
+
+	.headerimg{
+		height: 700px;
+	}
+
+	#profile{
+		top:700px;
+	}
+
+	#date{
+		margin-bottom: 5px;
+	}
+
+	.bodytextonefirst{
+		top: 5%;
+		left: 5%;
+		padding: 25px;
+		margin-bottom: 10px;
+		width: 80%;
+	}
+
+	.imgone{
+		top: 60%;
+		left: 25%;
+		width: 60%;
+	}
+
+}
+
+@media screen and (max-width:480px){
+	.headerimg{
+		height: 800px;
+	}
+
+	.infotext{
+		font-size: 40px;
+	}
+	#profile{
+		top:800px;
+	}
+
+	.content{
+		top: 2%;
+		left: 1%;
+		padding: 10px;
+		margin-bottom: 5px;
+		width: 88%;
+	}
+	img{
+		top: 72%;
+		left: 10%;
+		width: 70%;
+	}
+
+}
