@@ -1,0 +1,186 @@
+/**
+ TODO(you): Add CSS for the list that you create yourself!
+*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.background1, .background2, .background3, .background4, .background5{
+	position: relative;
+  opacity: 0.80;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.background1{
+	display: flex;
+	background-image: url(../images/header1.jpg);
+	align-items: center;
+	justify-content: center;
+}
+
+.text{
+	margin: auto;
+	max-width: 780px;
+}
+
+.infotext{
+	position: relative;
+	font-size: 36px;
+	font-family: 'Roboto Slab', 'serif';
+ 	color: white;
+}
+
+#one{
+	color: black;
+	display:  inline-block;
+}
+
+#profile{
+	border-radius: 50%;
+	position: absolute;
+	top: 500px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border: 2px solid white;
+	width: 100px;
+}
+
+.profile-text{
+	position: relative;
+	top: 55px;
+	font-size: 25px;
+	font-family: 'Source Sans Pro', 'sans-serif';
+	color: #FF002F;
+	line-height: 24px;
+	margin-bottom: 0px;
+}
+
+#date{
+	text-decoration: underline;
+	padding-bottom: 10px;
+	border-bottom: 2px solid;
+	border-color: rgb(51,51,51);
+	width: 200px;
+}
+
+.bar{
+	position: relative;
+	width: 100%;
+	background-color: #00CC00;
+	height: 200px;
+	margin-top: 100px;
+}
+
+.point{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: white;
+	font-size: 40px;
+}
+
+.background2{
+	background-image: url(../images/background2.jpg);
+}
+
+.content{
+	top: 20%;
+	left: 10%;
+	position: absolute;
+	width: 40%;
+	float: left;
+	font-family: 'Source Sans Pro', 'sans-serif';
+	font-size: 22px;
+	background-color: rgba(255,255,255,0.9); 
+	padding: 50px;
+	border: 5px solid red;
+	border-radius: 50px;
+}
+
+.imgStyle{
+	background-color: rgba(255,255,255,1.4);
+}
+
+img{
+	width: 27%;
+	top: 25%;
+	right: 10%;
+	position: absolute;
+	display: inline-block;
+	float: right;
+	border-radius: 50px;
+	border:2px solid red;
+}
+
+.background3{
+	background-image: url(../images/background3.jpg);
+}
+.background4{
+	background-image: url(../images/background4.jpg);
+	}
+.background5{
+	background-image: url(../images/background5.jpg);
+}
+
+@media screen and (min-width: 480px) and (max-width:720px){
+	.background1, .background2, .background3, .background4, .background5{
+		height: 700px;
+	}
+
+	#profile{
+		top:700px;
+	}
+
+	.content{
+		top: 5%;
+		left: 5%;
+		padding: 25px;
+		margin-bottom: 10px;
+		width: 80%;
+	}
+	img{
+		top: 60%;
+		left: 25%;
+		width: 50%;
+	}
+	.bar{
+		height: 100px;
+	}
+}
+
+@media screen and (max-width:480px){
+	.background1, .background2, .background3, .background4, .background5{
+		height: 800px;
+	}
+
+	.infotext{
+		font-size: 40px;
+	}
+	#profile{
+		top:800px;
+	}
+
+	.content{
+		top: 2%;
+		left: 1%;
+		padding: 10px;
+		margin-bottom: 5px;
+		width: 88%;
+	}
+	img{
+		top: 72%;
+		left: 10%;
+		width: 70%;
+	}
+	.bar{
+		height: 70px;
+	}
+	.point{
+		font-size: 20px;
+	}
+}
